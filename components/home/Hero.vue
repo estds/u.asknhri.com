@@ -22,7 +22,6 @@ const { title, description, github } = useAppConfig()
       <div class="flex flex-col gap-3 mt-6 sm:flex-row">
         <HomeLink
           href="/dashboard"
-          target="_blank"
           title="Dashboard"
           class="flex items-center justify-center gap-1"
           rel="noopener"
@@ -31,20 +30,6 @@ const { title, description, github } = useAppConfig()
             class="w-5 h-5"
           />
           Dashboard
-        </HomeLink>
-        <HomeLink
-          size="lg"
-          type="outline"
-          rel="noopener"
-          :href="github"
-          title="Github"
-          class="flex items-center justify-center gap-1"
-          target="_blank"
-        >
-          <GitHubIcon
-            class="w-5 h-5"
-          />
-          GitHub Repo
         </HomeLink>
       </div>
     </div>
